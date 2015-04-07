@@ -1,0 +1,379 @@
+ body {
+        min-height: 100%; 
+        background-color: #469810;
+        font-family: 'PT Sans', sans-serif;
+        color: #3a1109;
+        padding: 0;
+        margin: 0;
+
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+  
+
+    .a-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%; }
+  .cp_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #0a8eca;
+    z-index: 1000;
+    box-shadow: 0 5px 1px rgba(0,0,0,0.2);
+  }
+  .cp_header-link {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 30px;
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+  .cp_header-link:hover {
+    color: #fff;
+  }
+  .cp_header-link_m {
+    height:80px; padding-top:25px; text-align:center;
+  }
+  p {
+    color: #555;
+     text-indent: 40px;
+     font-size: 19px;
+     line-height: 1.618;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+  a.bl_link,
+  a.bl_link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .footer-text {
+    text-indent: 0px; font-size: 11px; color:#aaa; margin-top:10px;
+  }
+  h1 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    color: #fd7e10;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.4);
+    font-size: 46px;
+    margin-bottom: 20px;
+  }
+  li {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  li span,
+  .hlt {
+    color: #0a8eca;
+  }
+  .btn-warning {
+    background-color: #fd7e10;
+    -webkit-transition: all 0.1s;
+     -moz-transition: all 0.1s ease-out 1s;
+     -o-transition: all 0.1s ease-out 1s;
+     transition: all 1s;
+  }
+  .btn-warning:hover {
+    margin-top: -2px;
+    margin-bottom: 2px;
+    background-color: #fd8e16;
+    -webkit-transition: all 0.1s;
+     -moz-transition: all 0.1s ease-out 1s;
+     -o-transition: all 0.1s ease-out 1s;
+     transition: all 0.3s;
+     box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+     text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  }
+  .cover {
+    width:100%; 
+    height:400px; 
+    background: url(../img/bck_blue.png) center no-repeat #088cc9;
+    overflow: hidden;
+    position: relative;
+  }
+  /*Lets start with the cloud formation rather*/
+
+/*The container will also serve as the SKY*/
+
+*{ margin: 0; padding: 0;}
+
+
+
+/*Time to finalise the cloud shape*/
+.cloud {
+  width: 173px; height: 54px;
+  background: url(../img/cloud.png) center no-repeat;  
+  position: relative; 
+}
+
+.cloud:after {
+  width: 120px; height: 120px;
+  top: -5px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+  top:20px;
+  -webkit-animation: moveclouds 15s linear infinite;
+  -moz-animation: moveclouds 15s linear infinite;
+  -o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+  right: 0px;
+  
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6; /*opacity proportional to the size*/
+  
+  /*Speed will also be proportional to the size and opacity*/
+  /*More the speed. Less the time in 's' = seconds*/
+  -webkit-animation: moveclouds 45s linear infinite;
+  -moz-animation: moveclouds 25s linear infinite;
+  -o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+  left: 550px; top:-30px;
+  
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+  
+  -webkit-animation: moveclouds 30s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+  left: 0px; top: -120px;
+  
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75; /*opacity proportional to the size*/
+  
+  -webkit-animation: moveclouds 35s linear infinite;
+  -moz-animation: moveclouds 18s linear infinite;
+  -o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+  left: 0px; top: -160px;
+  
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+  
+  -webkit-animation: moveclouds 18s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+  0% {margin-left: 110%;}
+  100% {margin-left: -110%;}
+}
+@-moz-keyframes moveclouds {
+  0% {margin-left: 1000px;}
+  100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+  0% {margin-left: 1000px;}
+  100% {margin-left: -1000px;}
+}
+
+@-webkit-keyframes van-work {
+  0% {margin-top: 0;}
+  50% {margin-top: -2px;}
+  100% {margin-top: 1px;}
+}
+@-moz-keyframes van-work {
+  0% {margin-top: 0;}
+  50% {margin-top: -2px;}
+  100% {margin-top: 1px;}
+}
+@-o-keyframes van-work {
+  0% {margin-top: 0;}
+  50% {margin-top: -2px;}
+  100% {margin-top: 1px;}
+}
+@-webkit-keyframes van-wheel {
+  0% {margin-top: 0;}
+  100% {margin-top: 1px;}
+}
+@-moz-keyframes van-wheel {
+  0% {margin-top: 0;}
+  100% {margin-top: 1px;}
+}
+@-o-keyframes van-wheel {
+  0% {margin-top: 0;}
+  100% {margin-top: 1px;}
+}
+@-webkit-keyframes van-road {
+  0% {left: -20%;}
+  100% {left: 110%;}
+}
+@-moz-keyframes van-road {
+  0% {left: -20%;}
+  100% {left: 110%;}
+}
+@-o-keyframes van-road {
+  0% {left: -20%;}
+  100% {left: 110%;}
+}
+.van {
+  width: 190px;
+  height: 110px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -95px;
+}
+#van-w-1 {
+  width: 189px;
+  height: 110px;
+  background: url(../img/van_1.png);
+  z-index: 100;
+  position: absolute;
+  -webkit-animation: van-wheel 0.2s linear infinite;
+  -moz-animation: van-wheel 0.2s linear infinite;
+  -o-animation: van-wheel 0.2s linear infinite;
+}
+#van-b-1 {
+  width: 189px;
+  height: 110px;
+  background: url(../img/van_0.png);
+  z-index: 90;
+  position: absolute;
+  -webkit-animation: van-work 0.5s linear infinite;
+  -moz-animation: van-work 0.5s linear infinite;
+  -o-animation: van-work 0.5s linear infinite;
+}
+#van-w-2 {
+  width: 189px;
+  height: 110px;
+  background: url(../img/van_2.png);
+  z-index: 80;
+  position: absolute;
+  -webkit-animation: van-wheel 0.2s linear infinite;
+  -moz-animation: van-wheel 0.2s linear infinite;
+  -o-animation: van-wheel 0.2s linear infinite;
+}
+#logo-a {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -150px;
+  background: url(../img/logo_a.png) center no-repeat;
+}
+#bck-0 {
+  width: 100%;
+  height: 47px;
+  background: url(../img/bck_00.png) repeat-x;
+  position: absolute;
+  z-index: 10;
+  bottom: 130px;
+  left: 0;
+    -webkit-animation: van-bck-f 7s linear infinite;
+  -moz-animation: van-bck-f 7s linear infinite;
+  -o-animation: van-bck-f 7s linear infinite;
+}
+@-webkit-keyframes van-bck-f {
+  0% {background-position: 0px 0px;}
+  100% {background-position: -159px 0px;}
+}
+@-moz-keyframes van-bck-f {
+  0% {background-position: 0px 0px;}
+  100% {background-position: -159px 0px;}
+}
+@-o-keyframes van-bck-f {
+  0% {background-position: 0px 0px;}
+  100% {background-position: -159px 0px;}
+}
+#bck-1 {
+  width: 100%;
+  height: 95px;
+  background: url(../img/bck_01.png) repeat-x;
+  position: absolute;
+  z-index: 20;
+  bottom: 80px;
+  left: 0;
+    -webkit-animation: van-bck-s 5s linear infinite;
+  -moz-animation: van-bck-s 5s linear infinite;
+  -o-animation: van-bck-s 5s linear infinite;
+}
+@-webkit-keyframes van-bck-s {
+  0% {background-position: 0px 0px;}
+  100% {background-position: -319px 0px;}
+}
+@-moz-keyframes van-bck-s {
+  0% {background-position: 0px 0px;}
+  100% {background-position: -319px 0px;}
+}
+@-o-keyframes van-bck-s {
+  0% {background-position: 0px 0px;}
+  100% {background-position: -319px 0px;}
+}
+#bck-2 {
+  width: 100%;
+  height: 191px;
+  background: url(../img/bck_02.png) repeat-x;
+  position: absolute;
+  z-index: 30;
+  bottom: 0;
+  left: 0;
+    -webkit-animation: van-bck-t 3s linear infinite;
+  -moz-animation: van-bck-t 3s linear infinite;
+  -o-animation: van-bck-t 3s linear infinite;
+}
+@-webkit-keyframes van-bck-t {
+  0% {background-position: 0px 0px;}
+  100% {background-position: -638px 0px;}
+}
+@-moz-keyframes van-bck-t {
+  0% {background-position: 0px 0px;}
+  100% {background-position: -638px 0px;}
+}
+@-o-keyframes van-bck-t {
+  0% {background-position: 0px 0px;}
+  100% {background-position: -638px 0px;}
+}
+#bck-3 {
+  width: 100%;
+  height: 29px;
+  background: url(../img/road.png) repeat-x;
+  position: absolute;
+  z-index: 30;
+  bottom: 18px;
+  left: 0;
+    -webkit-animation: van-bck-fo 0.2s linear infinite;
+  -moz-animation: van-bck-fo 0.2s linear infinite;
+  -o-animation: van-bck-fo 0.2s linear infinite;
+}
+@-webkit-keyframes van-bck-fo {
+  0% {background-position: 0px 0px;}
+  100% {background-position: -40px 0px;}
+}
+@-moz-keyframes van-bck-fo {
+  0% {background-position: 0px 0px;}
+  100% {background-position: -40px 0px;}
+}
+@-o-keyframes van-bck-fo {
+  0% {background-position: 0px 0px;}
+  100% {background-position: -40px 0px;}
+}
