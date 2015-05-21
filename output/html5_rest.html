@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html manifest="rest_1.manifest">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		
+		<script type="text/javascript">
+			function hideUrlBar() {
+				// hide URL field on the iPhone/iPod touch
+				var p = String(navigator.platform);
+	
+				container = document.getElementById("container");
+				if( p === 'iPad' || p === 'iPhone' || p === 'iPod touch' ){
+					var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+					if (parseInt(v[1], 10)>=7) {
+						// iOS >=7
+						if (container) {
+							container.style.top=(0) + "px";
+							container.style.left=(0) + "px";
+							container.style.width=(window.innerWidth) + "px";
+							container.style.height=(window.innerHeight) + "px";
+							if (pano) {
+								pano.setViewerSize(window.innerWidth, window.innerHeight);
+							}						}
+						window.scrollTo(0, 0);
+					} else {
+						if (container) {
+							var cheight;
+							switch(window.innerHeight) {
+								case 208:cheight=268; break; // landscape
+								case 260:cheight=320; break; // landscape, fullscreen
+								case 336:cheight=396; break; // portrait, in call status bar
+								case 356:cheight=416; break; // portrait 
+								case 424:cheight=484; break; // portrait iPhone5, in call status bar
+								case 444:cheight=504; break; // portrait iPhone5 
+								default: cheight=window.innerHeight;
+							}
+							if ((cheight) && ((container.offsetHeight!=cheight) || (window.innerHeight!=cheight))) {
+								container.style.height=cheight + "px";
+							}
+						}
+						document.getElementsByTagName("body")[0].style.marginTop="1px";
+						window.scrollTo(0, 1);
+					}
+				}
+			}            
+			if (window.addEventListener) {
+				window.addEventListener("load", hideUrlBar);
+				window.addEventListener("resize", hideUrlBar);
+				window.addEventListener("orientationchange", hideUrlBar);
+			}
+	
+		</script>
+		<style type="text/css" title="Default">
+			body, div, h1, h2, h3, span, p {
+				font-family: Verdana,Arial,Helvetica,sans-serif;
+				color: #000000; 
+			}
+			/* fullscreen */
+			html {
+				height:100%;
+			}
+			body {
+				height:100%;
+				margin: 0px;
+				overflow:hidden; /* disable scrollbars */
+			}
+			body {
+			  font-size: 10pt;
+			  background : #ffffff; 
+			}
+			table,tr,td {
+				font-size: 10pt;
+				border-color : #777777;
+				background : #dddddd; 
+				color: #000000; 
+				border-style : solid;
+				border-width : 2px;
+				padding: 5px;
+				border-collapse:collapse;
+			}
+			h1 {
+				font-size: 18pt;
+			}
+			h2 {
+				font-size: 14pt;
+			}
+			.warning { 
+				font-weight: bold;
+			} 
+			/* fix for scroll bars on webkit & Mac OS X Lion */ 
+			::-webkit-scrollbar {
+				background-color: rgba(0,0,0,0.5);
+				width: 0.75em;
+			}
+			::-webkit-scrollbar-thumb {
+    			background-color:  rgba(255,255,255,0.5);
+			}
+		</style>	
+	</head>
+	<body>
+		<script type="text/javascript" src="pano2vr_player.js">
+		</script>
+		<script type="text/javascript" src="skin.js">
+		</script>
+		<div id="container" style="width:100%;height:100%;">
+		This content requires HTML5/CSS3, WebGL, or Adobe Flash Player Version 9 or higher.
+		</div>
+		<script type="text/javascript">
+	
+	
+			// create the panorama player with the container
+			pano=new pano2vrPlayer("container");
+			// add the skin object
+			skin=new pano2vrSkin(pano);
+			// load the configuration
+			panorama='<?xml version="1.0" encoding="UTF-8"?>';
+			panorama+='<panorama id="" hideabout="1">';
+			panorama+='  <view fovmode="0" pannorth="0">';
+			panorama+='    <start pan="316" fov="70" tilt="0"/>';
+			panorama+='    <min pan="0" fov="5" tilt="-90"/>';
+			panorama+='    <max pan="360" fov="70" tilt="90"/>';
+			panorama+='  </view>';
+			panorama+='  <userdata title="" datetime="" description="" copyright="" tags="" author="" source="" comment="" info="" longitude="" latitude=""/>';
+			panorama+='  <hotspots width="180" height="20" wordwrap="1">';
+			panorama+='    <label width="180" backgroundalpha="1" enabled="1" height="20" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>';
+			panorama+='    <polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>';
+			panorama+='    <hotspot title="" target="" pan="-162.36" skinid="03" url="rest_2_out.xml" id="Point01" tilt="0.389922"/>';
+			panorama+='    <hotspot title="" target="" pan="-9.379709999999999" skinid="n52" url="" id="Point02" tilt="-4.38546"/>';
+			panorama+='    <hotspot title="" target="" pan="-31.4329" skinid="n53" url="" id="Point03" tilt="-4.17314"/>';
+			panorama+='    <hotspot title="" target="" pan="-58.6066" skinid="n54" url="" id="Point04" tilt="-3.65859"/>';
+			panorama+='    <hotspot title="" target="" pan="-68.2205" skinid="n55" url="" id="Point05" tilt="-3.28061"/>';
+			panorama+='    <hotspot title="" target="" pan="27.2082" skinid="n49" url="" id="Point06" tilt="-19.8047"/>';
+			panorama+='    <hotspot title="" target="" pan="-61.2912" skinid="n50" url="" id="Point07" tilt="-13.9132"/>';
+			panorama+='    <hotspot title="" target="" pan="-82.6621" skinid="n51" url="" id="Point08" tilt="-8.38209"/>';
+			panorama+='    <hotspot title="" target="" pan="-143.079" skinid="n48" url="" id="Point09" tilt="-20.3678"/>';
+			panorama+='    <hotspot title="" target="" pan="148.331" skinid="n47" url="" id="Point10" tilt="-10.8202"/>';
+			panorama+='    <hotspot title="" target="" pan="-142.153" skinid="n46" url="" id="Point11" tilt="-8.40612"/>';
+			panorama+='    <hotspot title="" target="" pan="-158.964" skinid="n45" url="" id="Point12" tilt="-6.8079"/>';
+			panorama+='    <hotspot title="" target="" pan="-171.853" skinid="n44" url="" id="Point13" tilt="-9.09136"/>';
+			panorama+='    <hotspot title="" target="" pan="175.697" skinid="n43" url="" id="Point14" tilt="-5.99852"/>';
+			panorama+='    <hotspot title="" target="" pan="-151.53" skinid="n42" url="" id="Point15" tilt="-4.85435"/>';
+			panorama+='  </hotspots>';
+			panorama+='  <media>';
+			panorama+='    <image width="1748" rotx="34" roty="17" rotz="-17" pan="98.72" stretch="0.76" fov="22.5" height="1240" id="_element_0" tilt="41.73" clickmode="0">';
+			panorama+='      <source url="rest1.jpg"/>';
+			panorama+='    </image>';
+			panorama+='    <image width="1748" rotx="21" roty="-10" rotz="7.1" pan="-121.5" stretch="0.8" fov="17.2" height="1240" id="_element_1" tilt="26.46" clickmode="0">';
+			panorama+='      <source url="rest2.jpg"/>';
+			panorama+='    </image>';
+			panorama+='  </media>';
+			panorama+='  <input tile0url="images/rest_1_o_0.jpg" prev5url="images/rest_1_o_preview_5.jpg" prev4url="images/rest_1_o_preview_4.jpg" prev3url="images/rest_1_o_preview_3.jpg" prev2url="images/rest_1_o_preview_2.jpg" prev1url="images/rest_1_o_preview_1.jpg" prev0url="images/rest_1_o_preview_0.jpg" tile5url="images/rest_1_o_5.jpg" tilesize="1800" tile4url="images/rest_1_o_4.jpg" tile3url="images/rest_1_o_3.jpg" tilescale="1.005555555555556" tile2url="images/rest_1_o_2.jpg" tile1url="images/rest_1_o_1.jpg">';
+			panorama+='    <preview color="0x808080"/>';
+			panorama+='  </input>';
+			panorama+='  <control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>';
+			panorama+='</panorama>';
+			panorama+='';
+			pano.readConfigString(panorama);
+			// hide the URL bar on the iPhone
+			setTimeout(function() { hideUrlBar(); }, 10);
+		</script>
+		<noscript>
+			<p><b>Please enable Javascript!</b></p>
+		</noscript>
+	</body>
+</html>

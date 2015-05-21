@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama id="" hideabout="1">
+  <view fovmode="0" pannorth="0">
+    <start pan="280" fov="70" tilt="0"/>
+    <min pan="0" fov="5" tilt="-90"/>
+    <max pan="360" fov="70" tilt="90"/>
+  </view>
+  <userdata title="" datetime="" description="" copyright="" tags="" author="" source="" comment="" info="" longitude="" latitude=""/>
+  <hotspots width="180" height="20" wordwrap="1">
+    <label width="180" backgroundalpha="1" enabled="1" height="20" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+    <polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+    <hotspot title="" target="45/0/70" pan="44.2341" skinid="02" url="rest_2_out.xml" id="Point01" tilt="2.05559"/>
+    <hotspot title="" target="" pan="-36.7388" skinid="01" url="rest_4_out.xml" id="Point02" tilt="-20.854"/>
+    <hotspot title="" target="" pan="167.054" skinid="n21" url="" id="Point03" tilt="-20.6447"/>
+    <hotspot title="" target="" pan="60.6511" skinid="n22" url="" id="Point04" tilt="-22.565"/>
+    <hotspot title="" target="" pan="67.8394" skinid="n23" url="" id="Point05" tilt="-8.796659999999999"/>
+    <hotspot title="" target="" pan="22.8092" skinid="n28" url="" id="Point06" tilt="-11.0653"/>
+    <hotspot title="" target="" pan="49.6932" skinid="n29" url="" id="Point07" tilt="-7.31934"/>
+    <hotspot title="" target="" pan="-89.16889999999999" skinid="n27" url="" id="Point08" tilt="-20.2872"/>
+    <hotspot title="" target="" pan="25.7832" skinid="n36" url="" id="Point09" tilt="-5.2193"/>
+    <hotspot title="" target="" pan="40.1824" skinid="n37" url="" id="Point10" tilt="-4.52721"/>
+  </hotspots>
+  <media/>
+  <input tile0url="images/rest_3_o_0.jpg" prev5url="images/rest_3_o_preview_5.jpg" prev4url="images/rest_3_o_preview_4.jpg" prev3url="images/rest_3_o_preview_3.jpg" prev2url="images/rest_3_o_preview_2.jpg" prev1url="images/rest_3_o_preview_1.jpg" prev0url="images/rest_3_o_preview_0.jpg" tile5url="images/rest_3_o_5.jpg" tilesize="1800" tile4url="images/rest_3_o_4.jpg" tile3url="images/rest_3_o_3.jpg" tilescale="1.005555555555556" tile2url="images/rest_3_o_2.jpg" tile1url="images/rest_3_o_1.jpg">
+    <preview color="0x808080"/>
+  </input>
+  <control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+</panorama>

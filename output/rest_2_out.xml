@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama id="" hideabout="1">
+  <view fovmode="0" pannorth="0">
+    <start pan="257" fov="70" tilt="0"/>
+    <min pan="0" fov="5" tilt="-90"/>
+    <max pan="360" fov="70" tilt="90"/>
+  </view>
+  <userdata title="" datetime="" description="" copyright="" tags="" author="" source="" comment="" info="" longitude="" latitude=""/>
+  <hotspots width="180" height="20" wordwrap="1">
+    <label width="180" backgroundalpha="1" enabled="1" height="20" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+    <polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+    <hotspot title="" target="" pan="4.83669" skinid="02" url="rest_1_out.xml" id="Point01" tilt="0.120773"/>
+    <hotspot title="" target="" pan="-80.9909" skinid="03" url="rest_3_out.xml" id="Point02" tilt="1.55996"/>
+    <hotspot title="" target="" pan="-14.4713" skinid="n40" url="" id="Point03" tilt="-5.96372"/>
+    <hotspot title="" target="" pan="11.7122" skinid="n41" url="" id="Point04" tilt="-6.0304"/>
+    <hotspot title="" target="" pan="-30.3343" skinid="n39" url="" id="Point05" tilt="-6.53374"/>
+    <hotspot title="" target="" pan="103.097" skinid="n34" url="" id="Point06" tilt="-15.8558"/>
+    <hotspot title="" target="" pan="33.3313" skinid="n33" url="" id="Point07" tilt="-20.207"/>
+    <hotspot title="" target="" pan="-47.3345" skinid="n32" url="" id="Point08" tilt="-26.2792"/>
+    <hotspot title="" target="" pan="-75.7758" skinid="n31" url="" id="Point09" tilt="-13.3912"/>
+    <hotspot title="" target="" pan="-72.4162" skinid="n38" url="" id="Point10" tilt="-6.01571"/>
+    <hotspot title="" target="" pan="-112.257" skinid="n25" url="" id="Point11" tilt="-16.6019"/>
+    <hotspot title="" target="" pan="169.23" skinid="n26" url="" id="Point12" tilt="-21.9682"/>
+    <hotspot title="" target="" pan="-116.671" skinid="n24" url="" id="Point13" tilt="-8.064069999999999"/>
+    <hotspot title="" target="" pan="-95.4556" skinid="n30" url="" id="Point14" tilt="-7.60163"/>
+  </hotspots>
+  <media>
+    <image width="1748" rotx="7" roty="6" rotz="-1.9" pan="152" stretch="0.78" fov="17.4" height="1240" id="_element_0" tilt="25.2" clickmode="0">
+      <source url="rest3.jpg"/>
+    </image>
+  </media>
+  <input tile0url="images/rest_2_o_0.jpg" prev5url="images/rest_2_o_preview_5.jpg" prev4url="images/rest_2_o_preview_4.jpg" prev3url="images/rest_2_o_preview_3.jpg" prev2url="images/rest_2_o_preview_2.jpg" prev1url="images/rest_2_o_preview_1.jpg" prev0url="images/rest_2_o_preview_0.jpg" tile5url="images/rest_2_o_5.jpg" tilesize="1800" tile4url="images/rest_2_o_4.jpg" tile3url="images/rest_2_o_3.jpg" tilescale="1.005555555555556" tile2url="images/rest_2_o_2.jpg" tile1url="images/rest_2_o_1.jpg">
+    <preview color="0x808080"/>
+  </input>
+  <control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+</panorama>

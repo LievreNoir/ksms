@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama id="" hideabout="1">
+  <view fovmode="0" pannorth="0">
+    <start pan="0" fov="70" tilt="0"/>
+    <min pan="0" fov="5" tilt="-90"/>
+    <max pan="360" fov="70" tilt="90"/>
+  </view>
+  <userdata title="" datetime="" description="" copyright="" tags="" author="" source="" comment="" info="" longitude="" latitude=""/>
+  <hotspots width="180" height="20" wordwrap="1">
+    <label width="180" backgroundalpha="1" enabled="1" height="20" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+    <polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+    <hotspot title="" target="350/0/70" pan="-164.37" skinid="01" url="myas_1_out.xml" id="Point01" tilt="-33.2116"/>
+    <hotspot title="Этаж 2" target="" pan="-117.572" skinid="010" url="myas_3_out.xml" id="Point02" tilt="0.800561"/>
+    <hotspot title="" target="" pan="100.75" skinid="n7" url="" id="Point03" tilt="-22.0522"/>
+    <hotspot title="" target="" pan="19.173" skinid="n8" url="" id="Point04" tilt="-13.491"/>
+    <hotspot title="" target="" pan="-74.7992" skinid="n9" url="" id="Point05" tilt="-19.7222"/>
+  </hotspots>
+  <media>
+    <image width="1748" rotx="29" roty="-10" rotz="3.5" pan="47.05" stretch="0.74" fov="19.5" height="1240" id="_element_0" tilt="35.99" clickmode="0">
+      <source url="myas.jpg"/>
+    </image>
+  </media>
+  <input tile0url="images/myas_2_o_0.jpg" prev5url="images/myas_2_o_preview_5.jpg" prev4url="images/myas_2_o_preview_4.jpg" prev3url="images/myas_2_o_preview_3.jpg" prev2url="images/myas_2_o_preview_2.jpg" prev1url="images/myas_2_o_preview_1.jpg" prev0url="images/myas_2_o_preview_0.jpg" tile5url="images/myas_2_o_5.jpg" tilesize="1800" tile4url="images/myas_2_o_4.jpg" tile3url="images/myas_2_o_3.jpg" tilescale="1.005555555555556" tile2url="images/myas_2_o_2.jpg" tile1url="images/myas_2_o_1.jpg">
+    <preview color="0x808080"/>
+  </input>
+  <control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+</panorama>
